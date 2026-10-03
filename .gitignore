@@ -1,22 +1,30 @@
-# Byte-compiled / optimized / DLL files
+# Environments
+venv/
+venv_compat/
+venv_lfm/
+.env
+
+# Datasets
+ml-100k/
+
+# Models (Optional: exclude large binary files)
+models/*.pkl
+models/*.h5
+
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Virtual environments
-.venv/
-env/
-venv/
-ENV/
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints
-
-# IDE
-.idea/
+# IDEs
 .vscode/
+.idea/
 
-# Datasets
-*.csv
-*.data
-ml-100k/
+# Large assets and scraped images (downloaded via scripts/download_posters.py or OMDb)
+assets/posters/*.jpg
+!assets/posters/.keep
+*.log
